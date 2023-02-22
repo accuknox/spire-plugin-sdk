@@ -3,11 +3,12 @@ package credentialcomposer_test
 import (
 	"testing"
 
-	"github.com/spiffe/spire-plugin-sdk/pluginsdk"
-	"github.com/spiffe/spire-plugin-sdk/plugintest"
-	credentialcomposerv1 "github.com/spiffe/spire-plugin-sdk/proto/spire/plugin/server/credentialcomposer/v1"
-	configv1 "github.com/spiffe/spire-plugin-sdk/proto/spire/service/common/config/v1"
-	"github.com/spiffe/spire-plugin-sdk/templates/server/credentialcomposer"
+	"github.com/accuknox/spire-plugin-sdk/pluginsdk"
+	"github.com/accuknox/spire-plugin-sdk/plugintest"
+	configv1 "github.com/accuknox/spire-plugin-sdk/proto/spire/service/common/config/v1"
+
+	credentialcomposerv1 "github.com/accuknox/spire-plugin-sdk/proto/spire/plugin/server/credentialcomposer/v1"
+	"github.com/accuknox/spire-plugin-sdk/templates/server/credentialcomposer"
 )
 
 func Test(t *testing.T) {

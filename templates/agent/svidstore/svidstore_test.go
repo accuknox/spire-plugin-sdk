@@ -3,11 +3,11 @@ package svidstore_test
 import (
 	"testing"
 
-	"github.com/spiffe/spire-plugin-sdk/pluginsdk"
-	"github.com/spiffe/spire-plugin-sdk/plugintest"
-	svidstorev1 "github.com/spiffe/spire-plugin-sdk/proto/spire/plugin/agent/svidstore/v1"
-	configv1 "github.com/spiffe/spire-plugin-sdk/proto/spire/service/common/config/v1"
-	"github.com/spiffe/spire-plugin-sdk/templates/agent/svidstore"
+	"github.com/accuknox/spire-plugin-sdk/pluginsdk"
+	"github.com/accuknox/spire-plugin-sdk/plugintest"
+	svidstorev1 "github.com/accuknox/spire-plugin-sdk/proto/spire/plugin/agent/svidstore/v1"
+	configv1 "github.com/accuknox/spire-plugin-sdk/proto/spire/service/common/config/v1"
+	"github.com/accuknox/spire-plugin-sdk/templates/agent/svidstore"
 )
 
 func Test(t *testing.T) {

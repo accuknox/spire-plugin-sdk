@@ -215,7 +215,7 @@ protobase = $(call protobase-rec,$(1),$(1))
 	$(E) PATH="$(protoc_gen_go_spire_dir):$(PATH)" $(protoc_bin) \
 		-I $(call protobase,$@) \
 		--go-spire_out=. \
-		--go-spire_opt=module=github.com/spiffe/spire-plugin-sdk \
+		--go-spire_opt=module=github.com/accuknox/spire-plugin-sdk \
 		--go-spire_opt=mode=plugin \
 		$<
 
@@ -224,7 +224,7 @@ protobase = $(call protobase-rec,$(1),$(1))
 	$(E) PATH="$(protoc_gen_go_spire_dir):$(PATH)" $(protoc_bin) \
 		-I $(call protobase,$@) \
 		--go-spire_out=. \
-		--go-spire_opt=module=github.com/spiffe/spire-plugin-sdk \
+		--go-spire_opt=module=github.com/accuknox/spire-plugin-sdk \
 		--go-spire_opt=mode=service \
 		$<
 
@@ -232,14 +232,14 @@ protobase = $(call protobase-rec,$(1),$(1))
 	@echo "generating $@..."
 	$(E) PATH="$(protoc_gen_go_grpc_dir):$(PATH)" $(protoc_bin) \
 		-I $(call protobase,$@) \
-		--go-grpc_out=. --go-grpc_opt=module=github.com/spiffe/spire-plugin-sdk \
+		--go-grpc_out=. --go-grpc_opt=module=github.com/accuknox/spire-plugin-sdk \
 		$<
 
 %.pb.go: %.proto $(protoc_bin) $(protoc_gen_go_bin) FORCE
 	@echo "generating $@..."
 	$(E) PATH="$(protoc_gen_go_dir):$(PATH)" $(protoc_bin) \
 		-I $(call protobase,$@) \
-		--go_out=. --go_opt=module=github.com/spiffe/spire-plugin-sdk \
+		--go_out=. --go_opt=module=github.com/accuknox/spire-plugin-sdk \
 		$<
 
 generate-check:

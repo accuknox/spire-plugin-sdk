@@ -1,8 +1,8 @@
 package internal
 
 import (
+	"github.com/accuknox/spire-plugin-sdk/pluginsdk"
 	goplugin "github.com/hashicorp/go-plugin"
-	"github.com/spiffe/spire-plugin-sdk/pluginsdk"
 )
 
 // ServerHandshakeConfig returns the handshake configuration for the given

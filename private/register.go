@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
+	initv1 "github.com/accuknox/spire-plugin-sdk/internal/proto/spire/service/private/init/v1"
+	"github.com/accuknox/spire-plugin-sdk/pluginsdk"
 	"github.com/hashicorp/go-hclog"
-	initv1 "github.com/spiffe/spire-plugin-sdk/internal/proto/spire/service/private/init/v1"
-	"github.com/spiffe/spire-plugin-sdk/pluginsdk"
 	"google.golang.org/grpc"
 )
 
